@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">FICHA DE CADASTRAMENTO</h1>
+        <P id="subtitulo">Complete suas informações a baixo</P>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Selecione o seu segmento:</strong></label>
+            <label>
+                <input type="radio" name="opcao" value="engineer_civil" checked>Engenheiro Civil
+            </label>
+            <label>
+                <input type="radio" name="opcao" id="engineer_naval">Engenheiro Naval
+            </label>
+            <label>
+                <input type="radio" name="opcao" id="engineer_mechanics">Engenheiro Mecânico
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Escolha seu nível</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Selecione os locais em que você já trabalhou:</strong></label><br><br>
+                <input type="checkbox" id="experience1" name="experience1" value="Refinaria"> 
+                <label for="experience1">Refinaria</label>
+                <input type="checkbox" id="experience2" name="experience2" value="Rodovias"> 
+                <label for="experience2">Rodovias</label>
+                <input type="checkbox" id="experience3" name="experience3" value="Metalurgica"> 
+                <label for="experience3">Metalurgica</label>
+                <input type="checkbox" id="experience4" name="experience4" value="Pre-sal"> 
+                <label for="experience4">Pré-sal</label>
+                <input type="checkbox" id="experience5" name="experience5" value="Automobilismo"> 
+                <label for="experience5">Automobilismo</label>
+                <input type="checkbox" id="experience6" name="experience6" value="Madeireira"> 
+                <label for="experience6">Madeireira</label>
+                <input type="checkbox" id="experience7" name="experience7" value="Outro"> 
+                <label for="experience7">Outro</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua última experiência</strong></label>
+            <textarea row="6" style="width: 26em" id="experience_desc"></textarea>
+        </div>
+
+        <button type="submit">Concluído</button>
+    </form>
+    
+</body>
+</html>
