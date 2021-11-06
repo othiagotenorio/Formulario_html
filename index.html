@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="">
     <title>Formulario</title>
 </head>
 <body>
 
     <div>
-        <h1 id="titulo">FICHA DE CADASTRAMENTO</h1>
+        <h1 id="titulo">Ficha de cadastramento para Engenheiros</h1>
         <P id="subtitulo">Complete suas informações a baixo</P>
     </div>
 
@@ -45,7 +46,7 @@
         </div>
 
         <div class="campo">
-            <label><strong>Senioridade</strong></label>
+            <label for="senioridade"><strong>Senioridade</strong></label>
             <select id="senioridade">
                 <option selected disabled value="">Escolha seu nível</option>
                 <option>Junior</option>
@@ -80,7 +81,7 @@
             <textarea row="6" style="width: 26em" id="experience_desc"></textarea>
         </div>
 
-        <button type="submit">Concluído</button>
+        <button class="botao" type="submit">Concluído</button>
     </form>
     
 </body>
